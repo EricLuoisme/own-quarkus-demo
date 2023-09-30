@@ -18,6 +18,9 @@
         <quarkus.platform.version>3.4.1</quarkus.platform.version>
         <skipITs>true</skipITs>
         <surefire-plugin.version>3.1.2</surefire-plugin.version>
+
+        <!-- Others -->
+        <lombok.ver>1.18.30</lombok.ver>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -31,6 +34,8 @@
         </dependencies>
     </dependencyManagement>
     <dependencies>
+
+        <!-- Quarkus needs -->
         <dependency>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-spring-web</artifactId>
@@ -53,6 +58,15 @@
             <artifactId>rest-assured</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <!-- Others -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.ver}</version>
+            <scope>provided</scope>
+        </dependency>
+
     </dependencies>
     <build>
         <plugins>
