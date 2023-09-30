@@ -6,6 +6,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * After using mvn install -> we could get a quarkus-run.jar file
+ * with cmd: java -jar ./target/quarkus-app/quarkus-run.jar
+ * we can find out that this compiled jar running super fast
+ */
 @RestController
 @RequestMapping("/greeting")
 public class GreetingController {
